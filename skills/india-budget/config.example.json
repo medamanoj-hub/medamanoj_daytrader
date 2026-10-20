@@ -1,18 +1,15 @@
 {
   "_comment": "Copy to trader/config.json and edit. All money in rupees. Percent values are percents (10 = 10 %).",
-
   "paper": true,
   "broker": "angelone",
   "exchange": "NSE",
   "product": "DELIVERY",
-
   "budget": 100000,
   "cash_buffer_pct": 10,
   "max_position_pct": 25,
   "min_order_value": 1000,
   "limit_buffer_pct": 0.5,
   "fill_leftover": true,
-
   "limits": {
     "max_order_value": 50000,
     "max_orders_per_day": 10,
@@ -22,7 +19,6 @@
     "allow_market_orders": false,
     "allow_non_eq_series": false
   },
-
   "charges": {
     "_comment": "Estimates for equity delivery. Check your broker's current rate card; some Angel One plans charge zero delivery brokerage.",
     "brokerage_pct": 0.1,
@@ -34,5 +30,16 @@
     "sebi_per_crore": 10,
     "gst_pct": 18,
     "dp_charge_per_sell": 20
+  },
+  "tax": {
+    "_comment": "Listed equity, resident individual. LTCG above the yearly exemption; rates as of FY 2026-27. brought_forward = unused losses from earlier years.",
+    "stcg_rate": 20.0,
+    "ltcg_rate": 12.5,
+    "ltcg_exemption": 125000,
+    "cess_pct": 4.0,
+    "brought_forward": {
+      "st": 0,
+      "lt": 0
+    }
   }
 }

@@ -96,7 +96,7 @@ def now_iso():
 def inr(v):
     if v is None:
         return "?"
-    return "₹{:,.2f}".format(v)
+    return ("-" if v < 0 else "") + "₹{:,.2f}".format(abs(v))
 
 
 # NSE tick sizes by price (equity cash market, revised 2025). The broker
@@ -141,6 +141,40 @@ def order_hash(o):
     key = "|".join(str(o.get(k)) for k in
                    ("symbol", "exchange", "side", "qty", "order_type", "limit_price", "product"))
     return hashlib.sha1(key.encode()).hexdigest()[:12]
+
+
+IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
+YAHOO = "https://query1.finance.yahoo.com/v8/finance/chart/%s.NS?range=5d&interval=1d"
+
+
+def fetch_yahoo(symbols):
+    """Last price per NSE symbol from Yahoo Finance (unofficial, may lag)."""
+    import urllib.request
+    out = {}
+    for s in symbols:
+        req = urllib.request.Request(YAHOO % s, headers={"User-Agent": "Mozilla/5.0"})
+        try:
+            with urllib.request.urlopen(req, timeout=15) as r:
+                out[s] = float(json.load(r)["chart"]["result"][0]["meta"]["regularMarketPrice"])
+        except Exception as e:  # noqa: BLE001
+            print("warning: no price for %s (%s)" % (s, e), file=sys.stderr)
+    return out
+
+
+def load_prices(path=None, fetch=False, symbols=()):
+    """(prices, as_of). From a file ({"prices": {...}, "as_of": ...} or a flat
+    {symbol: price}), from Yahoo with fetch=True (also saved to
+    trader/prices.json), or from trader/prices.json."""
+    if fetch:
+        raw = {"prices": fetch_yahoo([s.upper() for s in symbols]), "as_of": now_iso(), "source": "yahoo"}
+        write_json(PRICES, raw)
+    else:
+        raw = read_json(path or PRICES, {}) or {}
+    as_of = raw.get("as_of") if isinstance(raw, dict) else None
+    flat = raw.get("prices", raw) if isinstance(raw, dict) else {}
+    prices = {k.upper(): float(v) for k, v in flat.items()
+              if isinstance(v, (int, float)) and not k.startswith("_")}
+    return prices, as_of
 
 
 def load_portfolio(cfg):

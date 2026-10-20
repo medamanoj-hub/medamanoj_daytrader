@@ -1,8 +1,19 @@
 {
   "name": "india-trader-skill",
-  "description": "5 Claude skills for Indian stocks: copy mutual funds and investors, track insider trades and bulk/block deals, size orders in rupees, check risk, and prepare Angel One tickets that never go through without your yes. Paper trading by default.",
-  "version": "0.1.0",
-  "author": { "name": "Meda Manoj Kumar" },
+  "description": "11 Claude skills for Indian stocks: copy mutual funds and investors, track insider trades, bulk/block deals and news, analyse results, screen, size orders in rupees, check risk, rebalance, estimate capital-gains tax, price alerts with the NSE calendar, and Angel One tickets that never go through without your yes. Paper trading by default.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Meda Manoj Kumar"
+  },
   "license": "MIT",
-  "keywords": ["india", "nse", "bse", "sebi", "mutual-funds", "insider-trading", "angel-one", "investing"]
+  "keywords": [
+    "india",
+    "nse",
+    "bse",
+    "sebi",
+    "mutual-funds",
+    "insider-trading",
+    "angel-one",
+    "investing"
+  ]
 }

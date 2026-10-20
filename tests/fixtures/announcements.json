@@ -1,0 +1,7 @@
+[
+ {"symbol": "LT", "desc": "Resignation of Statutory Auditor", "attchmntText": "The statutory auditors have resigned citing pre-occupation.", "an_dt": "17-Oct-2026 18:20:11", "attchmntFile": "https://nsearchives.nseindia.com/corporate/sample1.pdf", "sm_name": "Larsen & Toubro Limited"},
+ {"symbol": "LT", "desc": "Board Meeting Intimation", "attchmntText": "Board meeting on 28-Oct-2026 to consider financial results for the quarter ended September 30, 2026.", "an_dt": "16-Oct-2026 10:05:00", "attchmntFile": "https://nsearchives.nseindia.com/corporate/sample2.pdf"},
+ {"symbol": "ITC", "desc": "Trading Window-XBRL", "attchmntText": "Closure of trading window", "an_dt": "15-Oct-2026 09:00:00", "attchmntFile": "-"},
+ {"symbol": "ITC", "desc": "Credit Rating", "attchmntText": "CRISIL has reaffirmed the long term rating.", "an_dt": "15-Oct-2026 12:30:00", "attchmntFile": "-"},
+ {"symbol": "INFY", "desc": "Updates", "attchmntText": "Not on the watchlist", "an_dt": "15-Oct-2026 12:30:00", "attchmntFile": "-"}
+]

@@ -1,0 +1,7 @@
+{"resCmpData": [
+ {"re_from_dt": "01-Jul-2026", "re_to_dt": "30-Sep-2026", "re_net_sale": 2450000, "re_net_profit": 312000, "re_pro_loss_bef_tax": 415000, "re_dil_eps": 18.4},
+ {"re_from_dt": "01-Apr-2026", "re_to_dt": "30-Jun-2026", "re_net_sale": 2300000, "re_net_profit": 280000, "re_pro_loss_bef_tax": 372000, "re_dil_eps": 16.5},
+ {"re_from_dt": "01-Jan-2026", "re_to_dt": "31-Mar-2026", "re_net_sale": 2380000, "re_net_profit": 295000, "re_pro_loss_bef_tax": 390000, "re_dil_eps": 17.4},
+ {"re_from_dt": "01-Oct-2025", "re_to_dt": "31-Dec-2025", "re_net_sale": 2200000, "re_net_profit": 260000, "re_pro_loss_bef_tax": 345000, "re_dil_eps": 15.3},
+ {"re_from_dt": "01-Jul-2025", "re_to_dt": "30-Sep-2025", "re_net_sale": 2100000, "re_net_profit": 240000, "re_pro_loss_bef_tax": 320000, "re_dil_eps": 14.1}
+]}

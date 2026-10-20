@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Sample feed</title>
+<item><title>ITC shares rise after sample company announces buyback plan - Sample News</title><link>https://example.com/a</link><pubDate>Sat, 17 Oct 2026 08:00:00 GMT</pubDate><source url="https://example.com">Sample News</source></item>
+<item><title>ITC shares rise after sample company announces buyback plan - Sample Wire</title><link>https://example.com/b</link><pubDate>Sat, 17 Oct 2026 08:30:00 GMT</pubDate><source url="https://example.com">Sample Wire</source></item>
+<item><title>Markets close flat; ITC among top gainers</title><link>https://example.com/c</link><pubDate>Fri, 16 Oct 2026 11:00:00 GMT</pubDate><source url="https://example.com">Sample Daily</source></item>
+</channel></rss>

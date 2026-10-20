@@ -55,8 +55,10 @@ class Sandbox(unittest.TestCase):
 
 class TestShared(unittest.TestCase):
     def test_helper_copies_identical(self):
-        for name, skills in (("trader_common.py", ("india-budget", "india-risk", "india-broker")),
-                             ("nse_http.py", ("india-copycat", "india-insider"))):
+        for name, skills in (("trader_common.py", ("india-budget", "india-risk", "india-broker",
+                                                   "india-rebalance", "india-tax", "india-alerts")),
+                             ("nse_http.py", ("india-copycat", "india-insider", "india-news",
+                                              "india-analyst", "india-alerts"))):
             first = os.path.join(SK, skills[0], name)
             for s in skills[1:]:
                 self.assertTrue(filecmp.cmp(first, os.path.join(SK, s, name), shallow=False),
