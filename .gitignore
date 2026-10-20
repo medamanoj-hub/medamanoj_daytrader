@@ -1,0 +1,5 @@
+# your personal trading state stays on your machine
+trader/
+__pycache__/
+*.pyc
+.env

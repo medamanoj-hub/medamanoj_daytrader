@@ -1,0 +1,68 @@
+[
+ {
+  "token": "1333",
+  "symbol": "HDFCBANK-EQ",
+  "name": "HDFCBANK",
+  "expiry": "",
+  "strike": "-1.000000",
+  "lotsize": "1",
+  "instrumenttype": "",
+  "exch_seg": "NSE",
+  "tick_size": "10.000000"
+ },
+ {
+  "token": "4963",
+  "symbol": "ICICIBANK-EQ",
+  "name": "ICICIBANK",
+  "expiry": "",
+  "strike": "-1.000000",
+  "lotsize": "1",
+  "instrumenttype": "",
+  "exch_seg": "NSE",
+  "tick_size": "10.000000"
+ },
+ {
+  "token": "2885",
+  "symbol": "RELIANCE-EQ",
+  "name": "RELIANCE",
+  "expiry": "",
+  "strike": "-1.000000",
+  "lotsize": "1",
+  "instrumenttype": "",
+  "exch_seg": "NSE",
+  "tick_size": "10.000000"
+ },
+ {
+  "token": "1594",
+  "symbol": "INFY-EQ",
+  "name": "INFY",
+  "expiry": "",
+  "strike": "-1.000000",
+  "lotsize": "1",
+  "instrumenttype": "",
+  "exch_seg": "NSE",
+  "tick_size": "10.000000"
+ },
+ {
+  "token": "1660",
+  "symbol": "ITC-EQ",
+  "name": "ITC",
+  "expiry": "",
+  "strike": "-1.000000",
+  "lotsize": "1",
+  "instrumenttype": "",
+  "exch_seg": "NSE",
+  "tick_size": "5.000000"
+ },
+ {
+  "token": "37743",
+  "symbol": "NIFTY02SEP2117500PE",
+  "name": "NIFTY",
+  "expiry": "02SEP2021",
+  "strike": "1750000.000000",
+  "lotsize": "50",
+  "instrumenttype": "OPTIDX",
+  "exch_seg": "NFO",
+  "tick_size": "5.000000"
+ }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "india-trader-skill",
+  "owner": { "name": "Meda Manoj Kumar" },
+  "plugins": [
+    {
+      "name": "india-trader-skill",
+      "source": "./",
+      "description": "Indian stock market skills: copycat, insider & deals tracker, budget, risk, Angel One order tickets. Paper trading by default."
+    }
+  ]
+}
