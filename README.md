@@ -5,6 +5,8 @@ investors you trust, watch what company insiders and big investors trade,
 follow the news and results, size every order to your budget in rupees, check it against your limits,
 and never place an order without your yes.
 
+Delivery (buy-and-hold) orders only: no intraday, F&O or margin, despite the repo name.
+
 Inspired by [trader-skill](https://github.com/Jakeschincariol/trader-skill),
 rebuilt for NSE/BSE, SEBI disclosures and Angel One.
 
@@ -39,15 +41,15 @@ and they're about the companies themselves.
 As a plugin, in Claude Code:
 
 ```
-/plugin marketplace add <your-github-user>/india-trader-skill
+/plugin marketplace add medamanoj-hub/medamanoj_daytrader
 /plugin install india-trader-skill@india-trader-skill
 ```
 
 Or copy the skill folders:
 
 ```
-git clone https://github.com/<your-github-user>/india-trader-skill.git
-cp -r india-trader-skill/skills/india-* ~/.claude/skills/
+git clone https://github.com/medamanoj-hub/medamanoj_daytrader.git
+cp -r medamanoj_daytrader/skills/india-* ~/.claude/skills/
 ```
 
 No Claude Code? Upload a skill folder as a zip in Claude's settings
